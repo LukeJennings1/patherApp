@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    
 }
 #content-sub-heading-wrapper {
     display: flex;
@@ -25,7 +24,79 @@
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    text-align: center;
 }
 .content-sub-heading {
     color: var(--textBlack);
+}
+#content-title-card-button-wrapper {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    margin-top: 5px;
+}
+#content-title-card-button-break {
+    border-left: solid 1px;
+    color: var(--textBlack);
+    height: 100%;
+    opacity: 0.5;
+}
+.button-height-adjust {
+    height: 85%;
+    width: 20%;
+}
+#travel-icon-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+.travel-icon {
+    position: absolute;
+    height: 10%;
+    width: auto;
+}
+#travel-icon-0 {
+    top: 60vh;
+    left: 85vw;
+    rotate: 24deg;
+}
+
+#travel-icon-1 {
+    top: 18vh;
+    left: 83vw;
+    rotate: -10deg;
+}
+#travel-icon-2 {
+    top: 20vh;
+    left: 13vw;
+    rotate: 24deg;
+}
+#travel-icon-3 {
+    top: 55vh;
+    left: 10vw;
+    rotate: -30deg;
+}
+#travel-icon-4 {
+    top: 70vh;
+    left: 35vw;
+    rotate: 10deg;
+}
+#travel-icon-5 {
+    top: 68vh;
+    left: 65vw;
+    rotate: -11deg;
+}
+.wiggle-animation {
+    animation-name: wiggleAnimation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes wiggleAnimation {
+    /* 0% {rotate: -30deg;} */
+    100% {rotate: 15deg;}
 }

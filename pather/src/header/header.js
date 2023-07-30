@@ -18,7 +18,7 @@ function Header(){
                             <div>Top Trips</div>
                         </a>
                         <a className='page-link-button'>
-                            <div>How to use</div>
+                            <div>How It Works</div>
                         </a>
                     </span>
             </span>
