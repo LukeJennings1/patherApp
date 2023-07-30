@@ -1,0 +1,36 @@
+
+#test {
+    color: red;
+}
+#header-container {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header-logo {
+    height: 100%;
+    width: auto;
+    margin-left: 10px;
+}
+#header-left-container {
+    display: flex;
+    height: 100%;
+    width: auto;
+    gap: 15px;
+}
+#signup-buttons-container {
+    margin-right: 15px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+#header-menu-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.page-link-button {
+    color: var( --textBlack);
+}
