@@ -13,19 +13,15 @@ function Header(){
                 </Link>
                 
                     <span id = 'header-menu-options'>
-                            <Link to = '/create' className='page-link-button'>
-                                <div>Create</div>
+                            <Link to = '/create'>
+                                <div className='page-link-button'>Create</div>
                             </Link>
-                        <a className='page-link-button'>
                             <Link to = 'create'>
-                                <div>Top Trips</div>
+                                <div className='page-link-button'>Top Trips</div>
                             </Link>
-                        </a>
-                        <a className='page-link-button'>
                             <Link to = 'create'>
-                                <div>How It Works</div>
+                                <div className='page-link-button'>How It Works</div>
                             </Link>
-                        </a>
                     </span>
             </span>
 
