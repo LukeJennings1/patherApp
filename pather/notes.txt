@@ -1,7 +1,30 @@
 Pather - AI generated trip ideas with 
 
-Header 
-    Content
-Footer
+Needs to send a post request to the backend which contains all the information like
+location from autofill location and other search terms (do some research on this).
+
+The backend then needs to make an api call to chatgpt api (this is bceause we cannot reveal the api key on the frontend)
+the backend will then return the post request with the answer. We will need to find a pending loading bar that fires
+while we are waiting for the ai to come back to us. 
+
+allow user to input amount of parameters from none to full 
+
+Food
+Nature
+History & Culture
+Retail Theropy 
+Adventure
+Public Transportation (assessability) 
+Budget (maybe)
+
+
+
+
+SECURITY: 
+Only allow 100 characters max 
+max of 3 prompts with no account
+max of 25 prompts / month with an account
+Unlimted with premium account and max 250 characters
+
 
 
