@@ -8,10 +8,15 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* use min-height 100 vh instead of height to allow extended height with large content */
+}
 body {
-  background:linear-gradient(45deg, #EEEEEE, #FAF8F9, #FFFFFF);
-  height: 100vh;
-  width: 100vw;
+  background:linear-gradient(45deg, #f7f7f7, #ffffff, #ffffff);
+  /* height: 100vh; */
+  /* width: 100vw; */
 }
 #root {
   height: 100%;
@@ -63,24 +68,31 @@ body {
   font-size: 50px;
 }
 #create-page-container {
-  height: 100vh;
   width: 100%;
 }
 #prompt-form-container {
-height: 100%;
 width: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 15px;
 }
 #prompt-form-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 20px;
+}
+#prompt-form-subHeading {
+  text-align: center;
+  width: 70%;
+  padding-top: 10px;
 }
 #promptFormSubmit {
   flex-direction: column;
   display: flex;
-  align-items: center;
-  width: 70%;
+  align-items: baseline;
+  width: 100%;
   gap: 15px;
 }
 .form-input {
@@ -109,14 +121,21 @@ width: auto;
     font-size: 13px;
     border-right: 1px solid #ececec;
 }
-#prompt-form-food-rating-box {
+.prompt-multi-input {
   border: transparent;
     background: transparent;
     height: 34px;
     outline: none;
 }
-select {
-  /* display:table-row; */
+.prompt-multi-input-titleCard {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-direction: row-reverse;
+}
+.prompt-icon {
+  height: 30px;
+  width: auto;
 }
 option {
   display:table-cell;
@@ -126,3 +145,10 @@ option {
   border-left: solid 1px;
   padding: 7px;
 }
+
+
+    select option:checked {
+        background: linear-gradient(var(--patherColorSecondary), var(--patherColorSecondary));
+        background-color: var(--patherColorSecondary) !important; /* for IE */
+        color: #000000 !important;
+    }

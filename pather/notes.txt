@@ -12,9 +12,8 @@ allow user to input amount of parameters from none to full
 Food
 Nature
 History & Culture
-Retail Theropy 
+Shopping 
 Adventure
-Public Transportation (assessability) 
 Budget (maybe)
 
 
