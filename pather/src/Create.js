@@ -8,12 +8,11 @@ import img4 from  './assets/icons8-money-bag-100.png'
 import img5 from  './assets/icons8-oak-tree-96.png'
 import img6 from  './assets/icons8-shopping-bag-100.png'
 import img7 from  './assets/icons8-tower-100.png'
-import REACT_APP_MAPSAPI from './.env'
 
 
 
 function Create() {
-    console.log(REACT_APP_MAPSAPI);
+    // console.log(process.env.REACT_APP_MAPSAPI);
 
 
 return (
@@ -36,7 +35,7 @@ return (
     <h3>Food</h3>
 <img className = 'prompt-icon' src = {img1}></img>
 </div>
-            <select name="prompt-food-rating-input" id = 'prompt-form-food-rating-box' class = 'prompt-multi-input' size = '5'>
+            <select name="prompt-food-rating-input" id = 'prompt-form-food-rating-box' className = 'prompt-multi-input' size = '5'>
                 <option className='prompt-form-rating-button food-rating-buttons' value = {1} >Not interested</option>
                 <option className='prompt-form-rating-button food-rating-buttons' value = {2} >Slightly interested</option>
                 <option className='prompt-form-rating-button food-rating-buttons' value = {3} >Moderately interested</option>
@@ -47,7 +46,7 @@ return (
     <h3>Parks and Nature</h3>
 <img className = 'prompt-icon' src = {img5}></img>
 </div>
-            <select name="prompt-Nature-rating-input" id = 'prompt-form-Nature-rating-box' class = 'prompt-multi-input' size = '5'>
+            <select name="prompt-Nature-rating-input" id = 'prompt-form-Nature-rating-box' className = 'prompt-multi-input' size = '5'>
                 <option className='prompt-form-rating-button' value = {1} >Not interested</option>
                 <option className='prompt-form-rating-button' value = {2} >Slightly interested</option>
                 <option className='prompt-form-rating-button' value = {3} >Moderately interested</option>
@@ -58,7 +57,7 @@ return (
     <h3>History and Culture</h3>
 <img className = 'prompt-icon' src = {img3}></img>
 </div>
-            <select name="prompt-HaC-rating-input" id = 'prompt-form-HaC-rating-box' class = 'prompt-multi-input' size = '5'>
+            <select name="prompt-HaC-rating-input" id = 'prompt-form-HaC-rating-box' className = 'prompt-multi-input' size = '5'>
                 <option className='prompt-form-rating-button' value = {1} >Not interested</option>
                 <option className='prompt-form-rating-button' value = {2} >Slightly interested</option>
                 <option className='prompt-form-rating-button' value = {3} >Moderately interested</option>
@@ -69,7 +68,7 @@ return (
     <h3>Shopping</h3>
 <img className = 'prompt-icon' src = {img6}></img>
 </div>
-            <select name="prompt-Shopping-rating-input" id = 'prompt-form-Shopping-rating-box' class = 'prompt-multi-input' size = '5'>
+            <select name="prompt-Shopping-rating-input" id = 'prompt-form-Shopping-rating-box' className = 'prompt-multi-input' size = '5'>
                 <option className='prompt-form-rating-button' value = {1} >Not interested</option>
                 <option className='prompt-form-rating-button' value = {2} >Slightly interested</option>
                 <option className='prompt-form-rating-button' value = {3} >Moderately interested</option>
@@ -81,7 +80,7 @@ return (
     <h3>Budget</h3>
 <img className = 'prompt-icon' src = {img4}></img>
 </div>
-            <select name="prompt-Budget-rating-input" id = 'prompt-form-Budget-rating-box' class = 'prompt-multi-input' size = '5'>
+            <select name="prompt-Budget-rating-input" id = 'prompt-form-Budget-rating-box' className = 'prompt-multi-input' size = '5'>
                 <option className='prompt-form-rating-button' value = {1} >Free</option>
                 <option className='prompt-form-rating-button' value = {2} >Budget-friendly</option>
                 <option className='prompt-form-rating-button' value = {3} >Moderate</option>

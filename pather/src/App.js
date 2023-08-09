@@ -5,11 +5,13 @@ import Content from './content/content.js';
 
 
 function App() {
+
   return (
     <div id="Site-Container">
         <Header />
         <Content />
         <Footer />
+        
     </div>
   );
 }
