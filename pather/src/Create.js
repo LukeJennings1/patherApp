@@ -8,10 +8,13 @@ import img4 from  './assets/icons8-money-bag-100.png'
 import img5 from  './assets/icons8-oak-tree-96.png'
 import img6 from  './assets/icons8-shopping-bag-100.png'
 import img7 from  './assets/icons8-tower-100.png'
+import REACT_APP_MAPSAPI from './.env'
 
 
 
 function Create() {
+    console.log(REACT_APP_MAPSAPI);
+
 
 return (
     <div id = 'create-page-container'>
@@ -96,13 +99,16 @@ return (
 }
 
 window.addEventListener('load', () => {
+
+    let promptOptions = {};
+
     const textInput = document.getElementById('prompt-form-food-rating-box');
     const promptMultiInput = document.getElementsByClassName('prompt-multi-input');
 
     for(let i = 0; i < promptMultiInput.length; i++) {
         promptMultiInput[i].addEventListener('input', () => {
-
-            console.log(promptMultiInput[i].value)
+            promptOptions[promptMultiInput[i].name] = parseInt(promptMultiInput[i].value);
+            console.log(promptOptions);
         });
     }
 
